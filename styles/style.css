@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 32px;
+}
+
+body {
+  background-color: #ddd;
+}
+
+/* Style the heaer */
+h1 {
+  text-shadow: 3px 3px 1px #775547;
+}
+
+.header {
+  padding: 10px;
+  background-color: #AA9E99;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 55px;
+}
+.header p {
+  color: #eee;
+}
+
+/* Style the navigation bar links */
+.navbar {
+  background-color: #9FB792;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+
+  padding: 14px 20px;
+
+  color: white;
+
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar .right {
+  float: right;
+}
+
+.navbar a:hover {
+  color: #92D0A3;
+  background-color: #899D7E;
+}
+
+/* Style the content */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: #5F6177;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  background-color: #D2D5F6;
+}
+
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  color: #f1f1f1;
+  background-color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
